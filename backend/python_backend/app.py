@@ -220,64 +220,50 @@ def evaluate_model(model, val_loader, device):
 X = tfidf_features_df.values  # Use TF-IDF features or raw tokenized sequences
 
 # Function to train, save models, and evaluate
-def train_and_save_model(target_variable, model_save_path, encoder_save_path):
+def train_and_evaluate_model(target_variable):
     y = features_df[target_variable].values
-    if not np.issubdtype(y.dtype, np.integer):  # Check if 'y' contains non-integer values
+    if not np.issubdtype(y.dtype, np.integer):
         print("Encoding target labels...")
-        y = level_encoder.fit_transform(y)  # Re-apply LabelEncoder if needed
+        level_encoder = LabelEncoder()
+        y = level_encoder.fit_transform(y)
 
-    # Convert data to PyTorch tensors
     X_tensor = torch.tensor(X, dtype=torch.float32)
     y_tensor = torch.tensor(y, dtype=torch.long)
-
-    # Create a dataset
     dataset = TensorDataset(X_tensor, y_tensor)
 
-    # KFold Cross Validation
     n_splits = 5
     kf = KFold(n_splits=n_splits, shuffle=True, random_state=42)
-    input_size = X_tensor.shape[1]  # Number of features (from TF-IDF or embeddings)
-    hidden_size = 128  # Number of units in the LSTM
-    num_layers = 2  # Number of LSTM layers
-    num_classes = len(np.unique(y))  # Number of output classes
-
+    
+    input_size = X_tensor.shape[1]
+    hidden_size = 128
+    num_layers = 2
+    num_classes = len(np.unique(y))
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # KFold Loop
     for fold, (train_index, val_index) in enumerate(kf.split(X_tensor)):
         print(f"Fold {fold + 1}/{n_splits}")
-
-        # Split data into training and validation sets
+        
         X_train, X_val = X_tensor[train_index], X_tensor[val_index]
         y_train, y_val = y_tensor[train_index], y_tensor[val_index]
 
-        # Create DataLoaders
         train_loader = DataLoader(TensorDataset(X_train, y_train), batch_size=32, shuffle=True)
         val_loader = DataLoader(TensorDataset(X_val, y_val), batch_size=32, shuffle=False)
 
-        # Initialize the model, loss function, and optimizer
-        model = LSTMClassifier(input_size=input_size, hidden_size=hidden_size, num_layers=num_layers, num_classes=num_classes).to(device)
+        model = LSTMClassifier(input_size=input_size, hidden_size=hidden_size, 
+                             num_layers=num_layers, num_classes=num_classes).to(device)
         criterion = nn.CrossEntropyLoss()
         optimizer = Adam(model.parameters(), lr=0.001)
 
-        # Train the model for a number of epochs
         num_epochs = 5
         for epoch in range(num_epochs):
             train_loss = train_model(model, train_loader, criterion, optimizer, device)
             val_accuracy = evaluate_model(model, val_loader, device)
             print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {train_loss:.4f}, Val Accuracy: {val_accuracy:.4f}")
 
-        # Save the model after training for each fold
-        torch.save(model.state_dict(), f"{model_save_path}_{target_variable}_fold_{fold + 1}.pth")
-
-    # Save the encoder for the target variable
-    joblib.dump(level_encoder, encoder_save_path)
-    print(f"Model for {target_variable} saved.")
-
-# Train and save models for each target variable
-train_and_save_model('level', 'lstm_classifier', 'level_encoder.pkl')
-train_and_save_model('severity', 'lstm_classifier', 'severity_encoder.pkl')
-train_and_save_model('impact', 'lstm_classifier', 'impact_encoder.pkl')
+# Train models for each target variable
+train_and_evaluate_model('level')
+train_and_evaluate_model('severity')
+train_and_evaluate_model('impact')
 
 def predict_error_message(models, error_message):
     predictions = {}
