@@ -1,0 +1,42 @@
+# Basic requirements for the script
+fastapi
+uvicorn
+python-multipart
+
+# PDF processing and vector database integration
+PyPDF2
+# torch --pre --index-url https://download.pytorch.org/whl/nightly/cpu
+torch
+# torchvision --pre --index-url https://download.pytorch.org/whl/nightly/cpu
+# torchaudio --pre --index-url https://download.pytorch.org/whl/nightly/cpu
+
+sentence-transformers
+faiss-cpu
+
+
+
+# Additional utilities
+requests
+
+
+# Core libraries for data manipulation and machine learning
+pandas
+scikit-learn
+numpy
+#torch
+transformers
+
+# Frameworks for deployment and API integration
+flask
+flask-cors
+pyngrok
+
+ray
+# Ray for hyperparameter optimization
+ray[tune]
+
+# LightRag for model integration
+# lightrag[ollama]
+
+# Joblib for model serialization
+# joblib

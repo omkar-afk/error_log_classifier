@@ -1,0 +1,2209 @@
+[
+  {
+    "error": "[crit] File does not exist: /var/www/html/xmlrpc",
+    "troubleshooting": "Ensure the 'xmlrpc' file or directory exists in /var/www/html. If not needed, consider removing the reference from the configuration file."
+  },
+  {
+    "error": "[error] PHP Fatal error: Call to undefined function",
+    "troubleshooting": "Check if the required PHP extension or function is enabled. Verify the PHP configuration and ensure the correct version is installed."
+  },
+  {
+    "error": "[warn] Failed to load resource: Connection reset by peer",
+    "troubleshooting": "Check network connectivity between the client and server. Ensure there are no firewall or connection issues."
+  },
+  {
+    "error": "[info] File not found: /var/www/html/styles.css",
+    "troubleshooting": "Ensure the file 'styles.css' exists in the correct location or update the link to point to the correct stylesheet."
+  },
+  {
+    "error": "[error] Unable to allocate memory for session",
+    "troubleshooting": "Increase memory_limit in PHP settings or optimize memory usage in the application."
+  },
+  {
+    "error": "[crit] Database query failed: Table 'users' doesn't exist",
+    "troubleshooting": "Verify if the 'users' table exists in the database. If missing, recreate the table or check the database import."
+  },
+  {
+    "error": "[error] Syntax error: Unexpected token '<' in JSON",
+    "troubleshooting": "Check the JSON response for malformed syntax. Ensure the API or backend is returning a valid JSON format."
+  },
+  {
+    "error": "[error] Invalid argument supplied for foreach() in /var/www/html/utils.php",
+    "troubleshooting": "Ensure the argument passed to foreach() is an array. Validate input before iterating."
+  },
+  {
+    "error": "[crit] Could not read from socket: Connection timed out",
+    "troubleshooting": "Check socket connection settings. Ensure the server is responding within the timeout period."
+  },
+  {
+    "error": "[alert] Access denied for user 'admin'@'localhost' (using password: YES)",
+    "troubleshooting": "Check database credentials and permissions. Ensure the user 'admin' has the correct password and access rights."
+  },
+  {
+    "error": "[info] File does not exist: /var/www/html/favicon.ico",
+    "troubleshooting": "Ensure the 'favicon.ico' file is in the specified directory, or update the HTML to reference an existing favicon."
+  },
+  {
+    "error": "[error] Unknown column 'email' in 'field list'",
+    "troubleshooting": "Verify the database schema to ensure the 'email' column exists in the relevant table. If missing, add the column."
+  },
+  {
+    "error": "[crit] Script timed out before returning headers",
+    "troubleshooting": "Increase the script execution time in the server configuration or optimize the script to reduce execution time."
+  },
+  {
+    "error": "[alert] Error establishing a database connection",
+    "troubleshooting": "Check the database connection settings, ensure the database server is running, and verify credentials."
+  },
+  {
+    "error": "[warn] File upload failed: File too large",
+    "troubleshooting": "Increase the 'upload_max_filesize' and 'post_max_size' limits in the PHP configuration."
+  },
+  {
+    "error": "[info] Could not find driver for MySQL",
+    "troubleshooting": "Ensure the MySQL driver is installed and enabled in the PHP configuration."
+  },
+  {
+    "error": "[warn] Unknown error occurred in application",
+    "troubleshooting": "Check server logs for additional details. Review application logic and error handling."
+  },
+  {
+    "error": "[error] PHP Parse error: syntax error, unexpected '}' in /var/www/html/index.php on line 33",
+    "troubleshooting": "Check the code for mismatched or misplaced curly braces. Ensure proper syntax in the PHP file."
+  },
+  {
+    "error": "[warn] Module not found: 'mod_rewrite'",
+    "troubleshooting": "Ensure the 'mod_rewrite' module is enabled in Apache. Run 'a2enmod rewrite' and restart the server."
+  },
+  {
+    "error": "[crit] PHP Fatal error: Maximum execution time exceeded in /var/www/html/process.php",
+    "troubleshooting": "Increase the max_execution_time setting in the PHP configuration or optimize the script to complete within the time limit."
+  },
+  {
+    "error": "[info] File does not exist: /var/www/html/contact.html",
+    "troubleshooting": "Ensure the 'contact.html' file exists in the specified location, or update the link to point to a valid file."
+  },
+  {
+    "error": "[crit] Unable to write to file: Permission denied",
+    "troubleshooting": "Check file and directory permissions to ensure write access. Modify ownership or permissions as necessary."
+  },
+  {
+    "error": "[emerg] Apache shutdown unexpectedly",
+    "troubleshooting": "Review the Apache error logs to identify the cause of the shutdown. Check for misconfigurations or resource limitations."
+  },
+  {
+    "error": "[error] SQL query failed: Column 'id' cannot be null",
+    "troubleshooting": "Ensure the 'id' field in the SQL table is set to auto-increment or provide a valid value when inserting records."
+  },
+  {
+    "error": "[info] File does not exist: /var/www/html/images/logo.png",
+    "troubleshooting": "Verify the 'logo.png' file exists in the correct directory, or update the path in the HTML code."
+  },
+  {
+    "error": "[error] SSL connection error: certificate verification failed",
+    "troubleshooting": "Check the SSL certificate for validity. Ensure the certificate is correctly installed and not expired."
+  },
+    
+   {
+        "error": "File does not exist",
+        "troubleshoot": "Ensure the file /var/www/html/docs/readme.txt is present in the specified directory."
+    },
+    {
+        "error": "Client denied by server configuration",
+        "troubleshoot": "Check the server configuration file for access restrictions to /var/www/html/secret/ and adjust as necessary."
+    },
+    {
+        "error": "PHP Fatal error: Maximum execution time of 60 seconds exceeded",
+        "troubleshoot": "Increase the maximum execution time in the php.ini file or optimize the script to execute faster."
+    },
+    {
+        "error": "Could not establish connection to the LDAP server: Connection refused",
+        "troubleshoot": "Verify the LDAP server is running and reachable, and check firewall settings."
+    },
+    {
+        "error": "Script execution took too long, aborting after 120 seconds",
+        "troubleshoot": "Optimize the script or adjust the server timeout settings to allow more time for script execution."
+    },
+    {
+        "error": "Cache cleared for client",
+        "troubleshoot": "No action required unless unintended cache clearing occurred."
+    },
+    {
+        "error": "SQL query failed: Incorrect syntax near 'FROM'",
+        "troubleshoot": "Review the SQL query for syntax errors near the FROM clause and correct the query."
+    },
+    {
+        "error": "Uncaught exception 'DivisionByZeroError' in /var/www/html/index.php",
+        "troubleshoot": "Check the code to prevent division by zero and add error handling for such exceptions."
+    },
+    {
+        "error": "System out of memory: Cannot allocate buffer for response",
+        "troubleshoot": "Increase the system memory or optimize the server to handle memory usage better."
+    },
+    {
+        "error": "PHP Warning: Division by zero in /var/www/html/functions.php",
+        "troubleshoot": "Review the code in functions.php to prevent division by zero."
+    },
+    {
+        "error": "File not found: /var/www/html/favicon.ico",
+        "troubleshoot": "Ensure the favicon.ico file is located in /var/www/html/ or update the HTML to reference the correct path."
+    },
+    {
+        "error": "Failed to write to log file: Permission denied",
+        "troubleshoot": "Check the file permissions for the log directory and ensure the web server has write access."
+    },
+    {
+        "error": "Invalid username/password combination",
+        "troubleshoot": "Check the user's credentials or ensure the authentication system is functioning correctly."
+    },
+    {
+        "error": "Invalid directive 'Options Indexes' in configuration file",
+        "troubleshoot": "Review the server configuration file for incorrect directives and correct them."
+    },
+    {
+        "error": "Client closed connection before response was sent",
+        "troubleshoot": "No immediate action required; monitor if the issue persists and investigate the client’s behavior."
+    },
+    {
+        "error": "PHP Fatal error: Call to undefined function mysql_query()",
+        "troubleshoot": "Ensure that the MySQL extension is installed and enabled, or update the code to use the new MySQLi or PDO functions."
+    },
+    {
+        "error": "Could not read request body: End of file found",
+        "troubleshoot": "Check the client's request to ensure the body is properly formatted and complete."
+    },
+    {
+        "error": "Connection to memcached successful",
+        "troubleshoot": "No action required; connection to memcached is working as expected."
+    },
+    {
+        "error": "MaxRequestWorkers setting reached, consider raising the limit",
+        "troubleshoot": "Increase the MaxRequestWorkers setting in the server configuration to allow more concurrent requests."
+    },
+    {
+        "error": "Apache web server unexpectedly stopped",
+        "troubleshoot": "Check the server logs for additional information about why the Apache service stopped, and restart the service."
+    },
+    {
+        "error": "PHP Fatal error: Call to a member function fetch() on a non-object in /var/www/html/data.php",
+        "troubleshoot": "Ensure the object is properly instantiated before calling the fetch() method, and add error handling."
+    },
+    {
+        "error": "Unable to bind to server: Address already in use",
+        "troubleshoot": "Check for any services that may already be using the specified address and either stop them or bind the service to a different address."
+    },
+    {
+        "error": "Authentication failed: User account locked",
+        "troubleshoot": "Unlock the user account or investigate why it was locked, and ensure proper authentication procedures are followed."
+    },
+    {
+        "error": "Client sent malformed request",
+        "troubleshoot": "Review the client's request for errors and ensure it complies with the expected format."
+    },
+    {
+        "error": "Directory index forbidden by rule",
+        "troubleshoot": "Modify the server configuration to allow directory indexing or provide an index file."
+    },
+    {
+        "error": "Script not found or unable to stat: /var/www/html/cgi-bin/test.cgi",
+        "troubleshoot": "Ensure the script exists and has the proper permissions to be executed."
+    },
+    {
+        "error": "Session write failed: Disk quota exceeded",
+        "troubleshoot": "Free up disk space or increase the disk quota for the server to allow session writes."
+    },
+    {
+        "error": "Network unreachable while connecting to upstream",
+        "troubleshoot": "Check network connectivity and ensure the upstream server is available."
+    },
+    {
+        "error": "Child process exited with status 1, signal 0",
+        "troubleshoot": "Investigate the cause of the child process termination by reviewing the application and server logs."
+    },
+    {
+        "error": "Connection from client closed successfully",
+        "troubleshoot": "No action required; connection closed properly."
+    },
+    {
+        "error": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry",
+        "troubleshoot": "Check for duplicate entries in the database and ensure the uniqueness constraints are handled correctly."
+    },
+    {
+        "error": "PHP Fatal error: Allowed memory size of 134217728 bytes exhausted",
+        "troubleshoot": "Increase the memory limit in the php.ini file or optimize the script to use less memory."
+    },
+    {
+        "error": "Too many failed login attempts, blocking IP for 24 hours",
+        "troubleshoot": "Monitor login attempts to prevent unauthorized access and ensure legitimate users are not blocked."
+    },
+    {
+        "error": "Invalid character encoding in POST data",
+        "troubleshoot": "Ensure the POST data is correctly encoded, and adjust the server's character encoding settings if necessary."
+    },
+    {
+        "error": "Cannot find module mod_security.so",
+        "troubleshoot": "Ensure that the mod_security module is installed and properly configured on the server."
+    },
+    {
+        "error": "MySQL query failed: Table './db/userdata' is marked as crashed",
+        "troubleshoot": "Repair the crashed table using the appropriate MySQL tools or commands."
+    },
+    {
+        "error": "Kernel panic: Cannot allocate socket buffer, aborting",
+        "troubleshoot": "Investigate system resources and socket configurations to prevent future kernel panics."
+    },
+    {
+        "error": "Connection timeout while retrieving large file",
+        "troubleshoot": "Increase the timeout settings or break the file transfer into smaller chunks."
+    },
+    {
+        "error": "Successfully handled GET request",
+        "troubleshoot": "No action required; the GET request was handled correctly."
+    },
+    {
+        "error": "Client closed connection while processing request",
+        "troubleshoot": "Monitor if the issue persists and ensure the client is stable during the request processing."
+    },
+    {
+        "error": "PHP Fatal error: Uncaught Error: Class 'Redis' not found",
+        "troubleshoot": "Ensure the Redis extension is installed and properly loaded in the PHP configuration."
+    },
+    {
+        "error": "Remote server unavailable: Could not connect to the proxy server",
+        "troubleshoot": "Check the proxy server's availability and ensure proper network routing."
+    },
+    {
+        "error": "Cache entry for key 'www.example.com' expired",
+        "troubleshoot": "Consider refreshing the cache or increasing the cache timeout."
+    },
+    {
+        "error": "File does not exist: /var/www/html/favicon.ico",
+        "troubleshoot": "Ensure the favicon.ico file is present at the specified path or update the reference in the HTML."
+    },
+    {
+        "error": "Failed to resolve hostname www.unavailable.com",
+        "troubleshoot": "Verify the DNS settings and ensure the hostname is valid and resolvable."
+    },
+    {
+        "error": "Unable to allocate memory for MySQL connection",
+        "troubleshoot": "Increase the memory limit or optimize memory usage for MySQL connections."
+    },
+    {
+        "error": "Power failure detected, shutting down server to prevent data corruption",
+        "troubleshoot": "Ensure the server is connected to an uninterruptible power supply (UPS) to prevent power-related issues."
+    },
+    {
+        "error": "Client provided invalid session cookie",
+        "troubleshoot": "Ensure proper session handling and validate session cookies on the client-side."
+    },
+    {
+        "error": "Successfully redirected to HTTPS version of the site",
+        "troubleshoot": "No action required; HTTPS redirection is working correctly."
+    }
+{
+  "errors": [
+    {
+      "error": "Critical application error: Unexpected shutdown",
+      "troubleshooting": [
+        "Check application logs for stack traces or errors leading up to the shutdown.",
+        "Verify the application environment (memory, CPU usage) before shutdown.",
+        "Ensure proper error handling is implemented in the application."
+      ]
+    },
+    {
+      "error": "Network failure: Unable to reach external service",
+      "troubleshooting": [
+        "Test network connectivity to the external service using ping or traceroute.",
+        "Check firewall settings or security groups that might block access.",
+        "Validate the external service's status to ensure it is operational."
+      ]
+    },
+    {
+      "error": "Invalid request: Missing required parameters",
+      "troubleshooting": [
+        "Review the API documentation for required parameters.",
+        "Implement input validation to check for missing parameters before processing requests.",
+        "Log detailed request data to identify which parameters are missing."
+      ]
+    },
+    {
+      "error": "Connection reset during upload",
+      "troubleshooting": [
+        "Check network stability during upload operations.",
+        "Increase server timeout settings to allow larger uploads.",
+        "Verify server capacity to handle concurrent uploads."
+      ]
+    },
+    {
+      "error": "Critical database error: Connection lost",
+      "troubleshooting": [
+        "Check the database server for logs indicating connection issues.",
+        "Monitor database performance metrics (e.g., connection limits, timeout settings).",
+        "Ensure the database is configured to accept connections from the application server."
+      ]
+    },
+    {
+      "error": "Kernel panic: Unable to continue",
+      "troubleshooting": [
+        "Review system logs (e.g., /var/log/messages) for kernel-related errors.",
+        "Check for hardware issues (e.g., failing disk, memory problems).",
+        "Update the kernel and drivers to the latest stable versions."
+      ]
+    },
+    {
+      "error": "Invalid request: Bad request syntax",
+      "troubleshooting": [
+        "Review the request format and ensure it adheres to API specifications.",
+        "Log malformed requests for further analysis.",
+        "Implement stricter request validation and error messaging."
+      ]
+    },
+    {
+      "error": "Disk space critically low: less than 5% available",
+      "troubleshooting": [
+        "Free up disk space by deleting unnecessary files or logs.",
+        "Implement log rotation and cleanup policies.",
+        "Monitor disk usage proactively to avoid future issues."
+      ]
+    },
+    {
+      "error": "Unauthorized access attempt",
+      "troubleshooting": [
+        "Audit application security settings to ensure proper authentication.",
+        "Review user permissions and roles to prevent unauthorized access.",
+        "Implement logging for security incidents to monitor suspicious activities."
+      ]
+    },
+    {
+      "error": "403 Forbidden",
+      "troubleshooting": [
+        "Verify user permissions for the requested resource.",
+        "Check server configurations to ensure correct access control settings.",
+        "Inspect API key or authentication credentials for validity."
+      ]
+    },
+    {
+      "error": "500 Internal Server Error",
+      "troubleshooting": [
+        "Review server logs for detailed error messages.",
+        "Check application code for exceptions that might not be handled.",
+        "Test application in a staging environment to replicate the issue."
+      ]
+    },
+    {
+      "error": "502 Bad Gateway",
+      "troubleshooting": [
+        "Check if the backend service is running and accessible.",
+        "Inspect the reverse proxy configuration for correctness.",
+        "Monitor network performance between the proxy and backend services."
+      ]
+    },
+    {
+      "error": "Timeout error: Request took too long to process",
+      "troubleshooting": [
+        "Analyze the code to identify performance bottlenecks.",
+        "Increase timeout settings if appropriate for long-running operations.",
+        "Consider optimizing database queries or reducing payload sizes."
+      ]
+    },
+    {
+      "error": "Service Unavailable: Maintenance mode enabled",
+      "troubleshooting": [
+        "Check if the application is intentionally down for maintenance.",
+        "Communicate scheduled maintenance times to users in advance.",
+        "Review logs for unexpected maintenance triggers."
+      ]
+    },
+    {
+      "error": "Database deadlock detected",
+      "troubleshooting": [
+        "Review transaction logs to identify conflicting queries.",
+        "Optimize database queries to reduce lock contention.",
+        "Implement retry logic in the application to handle deadlocks."
+      ]
+    },
+    {
+      "error": "Resource not found: 404 Not Found",
+      "troubleshooting": [
+        "Verify the requested URL for accuracy.",
+        "Check routing configurations for the application.",
+        "Ensure the resource exists and is not deleted or moved."
+      ]
+    },
+    {
+      "error": "SSL certificate validation failed",
+      "troubleshooting": [
+        "Check the SSL certificate for expiration or misconfiguration.",
+        "Ensure that the client trusts the certificate authority (CA).",
+        "Update the certificate on the server if it has changed."
+      ]
+    },
+    {
+      "error": "Memory leak detected",
+      "troubleshooting": [
+        "Profile application memory usage to identify leaks.",
+        "Review code for proper resource management and cleanup.",
+        "Use tools like Valgrind or similar to track memory allocation."
+      ]
+    },
+    {
+      "error": "Rate limit exceeded",
+      "troubleshooting": [
+        "Review API usage policies to understand limits.",
+        "Implement exponential backoff in client requests.",
+        "Monitor and analyze request patterns to optimize usage."
+      ]
+    },
+    {
+      "error": "User session expired",
+      "troubleshooting": [
+        "Implement session refresh mechanisms to extend user sessions.",
+        "Notify users of session expiration with a warning.",
+        "Log session activity to monitor for unusual patterns."
+      ]
+    },
+    {
+      "error": "Invalid JSON format in request body",
+      "troubleshooting": [
+        "Use JSON validators to check the format of the request body.",
+        "Log the request body to identify specific formatting issues.",
+        "Provide clear error messages indicating the expected JSON structure."
+},
+[
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "troubleshooting": [
+            "Check disk usage with commands like `df -h`.",
+            "Clear unnecessary files or increase disk space.",
+            "Set up alerts for disk space usage."
+        ]
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": [
+            "Verify API key configuration and ensure the client is using the correct key.",
+            "Implement rate limiting and logging for suspicious activities."
+        ]
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "troubleshooting": [
+            "Check the requested URL and ensure it matches existing endpoints.",
+            "Implement better error handling for invalid requests."
+        ]
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "troubleshooting": [
+            "Review logs to find patterns in invalid requests.",
+            "Ensure API documentation is up to date."
+        ]
+    },
+    {
+        "error": "Fatal error: Database connection failed",
+        "troubleshooting": [
+            "Check database server status.",
+            "Review database credentials and configuration settings.",
+            "Investigate potential network issues affecting database connectivity."
+        ]
+    },
+    {
+        "error": "Session expired: Please log in again",
+        "troubleshooting": [
+            "Inform users about session expiration policies.",
+            "Implement a mechanism for automatic session renewal if applicable."
+        ]
+    },
+    {
+        "error": "Invalid credentials during login attempt",
+        "troubleshooting": [
+            "Review failed login attempts to detect possible brute-force attacks.",
+            "Consider implementing account lockout mechanisms after multiple failed attempts."
+        ]
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "troubleshooting": [
+            "Review application logs for stack traces.",
+            "Implement better error handling and logging throughout the application."
+        ]
+    },
+    {
+        "error": "Server shutting down due to critical error",
+        "troubleshooting": [
+            "Investigate the cause of the critical error leading to shutdown.",
+            "Implement failover mechanisms."
+        ]
+    },
+[
+    {
+        "error": "Connection reset during upload",
+        "solution": "Check network stability during file uploads. Consider implementing retry logic for uploads."
+    },
+    {
+        "error": "Critical application error: Unexpected shutdown",
+        "solution": "Investigate application logs for causes of shutdown. Review resource usage and implement error handling."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "solution": "Check disk usage with commands like `df -h`. Clear unnecessary files or increase disk space. Set up alerts for disk space usage."
+    },
+    {
+        "error": "Invalid request: Missing required parameters",
+        "solution": "Review API documentation to ensure all required parameters are included in requests. Implement better validation on server-side."
+    },
+    {
+        "error": "Invalid request: 500 Internal Server Error",
+        "solution": "Check server logs for detailed error messages. Investigate potential bugs in the server-side code."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "solution": "Ensure the database server is running. Check for network issues or database resource limitations."
+    },
+    {
+        "error": "High severity error: System overload, shutting down",
+        "solution": "Monitor system resource usage and optimize code. Consider scaling resources or implementing load balancing."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "solution": "Ensure that the requests are properly formatted and conform to the expected syntax."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "solution": "Investigate hardware issues or faulty drivers. Review system logs for details on the panic."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "solution": "Verify API key configuration and ensure the client is using the correct key. Implement rate limiting and logging for suspicious activities."
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "solution": "Check the requested URL and ensure it matches existing endpoints. Implement better error handling for invalid requests."
+    },
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "solution": "Verify permissions and access controls for the requested resource. Check user roles and authentication status."
+    }
+]
+[
+    {
+        "error": "High severity error: System overload, shutting down",
+        "solution": "Monitor server resource usage and optimize performance. Consider load balancing and increasing server capacity."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "solution": "Check the format and structure of requests. Ensure they meet the API's specifications."
+    },
+    {
+        "error": "Request to /api/v1/resource returned 403 Forbidden",
+        "solution": "Verify permissions for the user making the request. Check API access controls and ensure the user has proper rights."
+    },
+    {
+        "error": "Critical application error: Unexpected shutdown",
+        "solution": "Investigate application logs for causes of shutdown. Review resource usage and implement error handling."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "solution": "Check network connectivity and ensure external services are operational. Implement retry logic for network requests."
+    },
+    {
+        "error": "Invalid request: Missing required parameters",
+        "solution": "Review API documentation to ensure all required parameters are included in requests. Implement better validation on server-side."
+    },
+    {
+        "error": "Invalid request: 500 Internal Server Error",
+        "solution": "Check server logs for detailed error messages. Investigate potential bugs in the server-side code."
+    },
+    {
+        "error": "Critical error: Could not connect to MySQL server",
+        "solution": "Ensure the MySQL server is running. Check network settings, credentials, and MySQL configuration."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "solution": "Investigate hardware issues or faulty drivers. Review system logs for details on the panic."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "solution": "Check disk usage with commands like `df -h`. Clear unnecessary files or increase disk space. Set up alerts for disk space usage."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "solution": "Verify API key configuration and ensure the client is using the correct key. Implement rate limiting and logging for suspicious activities."
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "solution": "Check the requested URL and ensure it matches existing endpoints. Implement better error handling for invalid requests."
+    },
+    {
+        "error": "Invalid credentials during login attempt",
+        "solution": "Ensure users are inputting the correct credentials. Implement account lockout policies after multiple failed attempts."
+    },
+    {
+        "error": "Service unavailable: Too many connections",
+        "solution": "Increase the maximum connections allowed in the database configuration. Monitor connection usage and optimize queries."
+    },
+[
+    {
+        "error": "Kernel panic: Unable to continue",
+        "solution": "Investigate hardware issues or faulty drivers. Review system logs for details on the panic."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "solution": "Check the format and structure of requests. Ensure they meet the API's specifications."
+    },
+    {
+        "error": "Request to /api/v1/orders returned 404 Not Found",
+        "solution": "Check the requested URL and ensure it matches existing endpoints. Implement better error handling for invalid requests."
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "solution": "Investigate application logs for causes of the unhandled exception. Review code for potential bugs and add proper error handling."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "solution": "Check disk usage with commands like `df -h`. Clear unnecessary files or increase disk space. Set up alerts for disk space usage."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "solution": "Verify API key configuration and ensure the client is using the correct key. Implement rate limiting and logging for suspicious activities."
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "solution": "Check the requested URL and ensure it matches existing endpoints. Implement better error handling for invalid requests."
+    },
+    {
+        "error": "Fatal error: Database connection failed",
+        "solution": "Ensure the database server is running. Check network settings, credentials, and database configuration."
+    },
+    {
+        "error": "Session expired: Please log in again",
+        "solution": "Prompt users to log in again when sessions expire. Consider implementing session keep-alive functionality."
+    },
+    {
+        "error": "Invalid credentials during login attempt",
+        "solution": "Ensure users are inputting the correct credentials. Implement account lockout policies after multiple failed attempts."
+    },
+    {
+        "error": "Connection reset during upload",
+        "solution": "Check for network stability during file uploads. Implement retries for uploads that fail due to connectivity issues."
+    },
+    {
+        "error": "Service unavailable: Too many connections",
+        "solution": "Increase the maximum connections allowed in the database configuration. Monitor connection usage and optimize queries."
+    },
+    {
+        "error": "Invalid request: Unsupported media type",
+        "solution": "Check the `Content-Type` header of the request and ensure it is supported by the API. Update the API documentation accordingly."
+    },
+    {
+        "error": "High severity error: System overload, shutting down",
+        "solution": "Monitor server resource usage and optimize performance. Consider load balancing and increasing server capacity."
+    },
+    {
+        "error": "Invalid request: Missing required parameters",
+        "solution": "Review API documentation to ensure all required parameters are included in requests. Implement better validation on server-side."
+    },
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "solution": "Verify permissions for the user making the request. Check API access controls and ensure the user has proper rights."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "solution": "Check database server status and ensure proper network connectivity. Investigate potential database resource issues."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "solution": "Check network connectivity and ensure external services are operational. Implement retry logic for network requests."
+    },
+    {
+        "error": "Invalid request: Missing Content-Length header",
+        "solution": "Ensure requests include a Content-Length header when applicable. Review API specifications for header requirements."
+    },
+[
+    {
+        "error": "User 'jane_doe' successfully updated account settings",
+        "solution": "No action needed; successful operation."
+    },
+    {
+        "error": "Request to /api/v1/orders returned 404 Not Found",
+        "solution": "Check the requested URL and ensure it matches existing endpoints. Implement better error handling for invalid requests."
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "solution": "Investigate application logs for causes of the unhandled exception. Review code for potential bugs and add proper error handling."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "solution": "Check network connectivity and ensure the external service is operational. Implement retry logic for network requests."
+    },
+    {
+        "error": "Invalid request: Missing Content-Length header",
+        "solution": "Ensure requests include a Content-Length header when applicable. Review API specifications for header requirements."
+    },
+    {
+        "error": "User 'temp_user' deleted successfully",
+        "solution": "No action needed; successful operation."
+    },
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "solution": "Verify permissions for the user making the request. Check API access controls and ensure the user has proper rights."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "solution": "Check database server status and ensure proper network connectivity. Investigate potential database resource issues."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "solution": "Investigate hardware issues or faulty drivers. Review system logs for details on the panic."
+    },
+    {
+        "error": "Invalid request: Unsupported media type",
+        "solution": "Check the `Content-Type` header of the request and ensure it is supported by the API. Update the API documentation accordingly."
+    },
+    {
+        "error": "User 'admin' successfully logged in",
+        "solution": "No action needed; successful operation."
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "solution": "Check the requested URL and ensure it matches existing endpoints. Implement better error handling for invalid requests."
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "solution": "Investigate application logs for causes of the unhandled exception. Review code for potential bugs and add proper error handling."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "solution": "Check disk usage with commands like `df -h`. Clear unnecessary files or increase disk space. Set up alerts for disk space usage."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "solution": "Verify API key configuration and ensure the client is using the correct key. Implement rate limiting and logging for suspicious activities."
+    },
+    {
+        "error": "Connection reset during upload",
+        "solution": "Check for network stability during file uploads. Implement retries for uploads that fail due to connectivity issues."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "solution": "Check database server status and ensure proper network connectivity. Investigate potential database resource issues."
+    },
+    {
+        "error": "High severity error: System overload, shutting down",
+        "solution": "Monitor server resource usage and optimize performance. Consider load balancing and increasing server capacity."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "solution": "Check the format and structure of requests. Ensure they meet the API's specifications."
+    },
+    {
+        "error": "User 'temp_user' created successfully",
+        "solution": "No action needed; successful operation."
+    },
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "solution": "Verify permissions for the user making the request. Check API access controls and ensure the user has proper rights."
+    },
+    {
+        "error": "Critical application error: Unexpected shutdown",
+        "solution": "Investigate logs for causes of the unexpected shutdown. Review resource usage and application stability."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "solution": "Check network connectivity and ensure the external service is operational. Implement retry logic for network requests."
+    },
+    {
+        "error": "Invalid request: Missing required parameters",
+        "solution": "Review API documentation to ensure all required parameters are included in requests. Implement better validation on server-side."
+    },
+    {
+        "error": "User 'username' successfully updated profile",
+        "solution": "No action needed; successful operation."
+    },
+    {
+        "error": "Invalid request: 500 Internal Server Error",
+        "solution": "Investigate server logs for details on the internal error. Review server configuration and application code."
+    },
+    {
+        "error": "Critical error: Could not connect to MySQL server",
+        "solution": "Check MySQL server status and ensure it is running. Verify network connectivity and credentials for the database."
+    }
+]
+[
+    {
+        "error": "403 Forbidden",
+        "message": "Request to /api/v1/orders returned 403 Forbidden",
+        "troubleshooting": "Check user permissions and ensure the API endpoint is accessible to the requesting user."
+    },
+    {
+        "error": "404 Not Found",
+        "message": "Invalid request: 404 Not Found",
+        "troubleshooting": "Verify the requested resource URL for accuracy and ensure the resource exists on the server."
+    },
+    {
+        "error": "Fatal error: Database connection failed",
+        "message": "Fatal error: Database connection failed",
+        "troubleshooting": "Check database server status, configuration settings, and network connectivity to the database."
+    },
+    {
+        "error": "Invalid credentials",
+        "message": "Invalid credentials during login attempt",
+        "troubleshooting": "Ensure the correct username and password are being used; check for account lockout or suspension."
+    },
+    {
+        "error": "Unhandled exception",
+        "message": "Critical application error: Unhandled exception",
+        "troubleshooting": "Investigate application logs to identify the cause of the exception and fix the underlying issue."
+    },
+    {
+        "error": "Server shutting down",
+        "message": "Server shutting down due to critical error",
+        "troubleshooting": "Review server logs to identify the critical error and apply necessary fixes to prevent shutdown."
+    },
+    {
+        "error": "403 Forbidden",
+        "message": "Request to /api/v1/resource returned 403 Forbidden",
+        "troubleshooting": "Review user permissions and ensure the API key or authentication method is valid."
+    },
+    {
+        "error": "Connection lost",
+        "message": "Critical database error: Connection lost",
+        "troubleshooting": "Check for network issues, database server status, and any resource limits on the database."
+    },
+    {
+        "error": "Service unavailable",
+        "message": "Service unavailable: Too many connections",
+        "troubleshooting": "Increase the maximum connections in the database settings or optimize the connection handling in the application."
+    },
+    {
+        "error": "Connection reset",
+        "message": "Connection reset during upload",
+        "troubleshooting": "Investigate network stability and check server logs for any issues during the upload process."
+    },
+    {
+        "error": "Unexpected shutdown",
+        "message": "Critical application error: Unexpected shutdown",
+        "troubleshooting": "Analyze the application logs for errors preceding the shutdown and ensure sufficient system resources."
+    },
+    {
+        "error": "Disk space critically low",
+        "message": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Free up disk space by deleting unnecessary files or increase storage capacity."
+    },
+    {
+        "error": "500 Internal Server Error",
+        "message": "Invalid request: 500 Internal Server Error",
+        "troubleshooting": "Examine server logs for detailed error messages; check for code issues or server misconfigurations."
+    },
+    {
+        "error": "Could not connect to MySQL server",
+        "message": "Critical error: Could not connect to MySQL server",
+        "troubleshooting": "Ensure MySQL server is running, check connection parameters, and verify network settings."
+    },
+    {
+        "error": "System overload",
+        "message": "High severity error: System overload, shutting down",
+        "troubleshooting": "Monitor system resource usage; optimize application performance and scaling."
+    },
+    {
+        "error": "Bad request syntax",
+        "message": "Invalid request: Bad request syntax",
+        "troubleshooting": "Verify request format and parameters for compliance with expected API standards."
+    }
+]
+[
+    {
+        "error": "Missing required parameters",
+        "message": "Invalid request: Missing required parameters",
+        "troubleshooting": "Ensure that all required parameters are included in the request and validate the API documentation."
+    },
+    {
+        "error": "Connection reset during upload",
+        "message": "Connection reset during upload",
+        "troubleshooting": "Investigate network stability and check server logs for any issues during the upload process."
+    },
+    {
+        "error": "Connection lost",
+        "message": "Critical database error: Connection lost",
+        "troubleshooting": "Check for network issues, database server status, and resource limits on the database."
+    },
+    {
+        "error": "System overload",
+        "message": "High severity error: System overload, shutting down",
+        "troubleshooting": "Monitor system resource usage; optimize application performance and consider scaling resources."
+    },
+    {
+        "error": "Missing Content-Length header",
+        "message": "Invalid request: Missing Content-Length header",
+        "troubleshooting": "Ensure the Content-Length header is correctly set in the request; review the request body for size."
+    },
+    {
+        "error": "500 Internal Server Error",
+        "message": "Invalid request: 500 Internal Server Error",
+        "troubleshooting": "Examine server logs for detailed error messages; check for code issues or server misconfigurations."
+    },
+    {
+        "error": "Unexpected shutdown",
+        "message": "Critical application error: Unexpected shutdown",
+        "troubleshooting": "Analyze application logs for errors preceding the shutdown and ensure sufficient system resources."
+    },
+    {
+        "error": "Unable to reach external service",
+        "message": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check the network connection and ensure that the external service is operational."
+    },
+    {
+        "error": "Bad request syntax",
+        "message": "Invalid request: Bad request syntax",
+        "troubleshooting": "Verify request format and parameters for compliance with expected API standards."
+    },
+    {
+        "error": "403 Forbidden",
+        "message": "Request to /api/v1/orders returned 403 Forbidden",
+        "troubleshooting": "Review user permissions and ensure the API key or authentication method is valid."
+    },
+    {
+        "error": "Connection lost",
+        "message": "Critical database error: Connection lost",
+        "troubleshooting": "Check for network issues, database server status, and any resource limits on the database."
+    },
+    {
+        "error": "Disk space critically low",
+        "message": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Free up disk space by deleting unnecessary files or increase storage capacity."
+    },
+    {
+        "error": "Invalid API key",
+        "message": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Verify that the API key is valid and that the account has the necessary permissions."
+    },
+    {
+        "error": "Connection reset during upload",
+        "message": "Connection reset during upload",
+        "troubleshooting": "Investigate network stability and check server logs for any issues during the upload process."
+    },
+    {
+        "error": "Invalid credentials",
+        "message": "Fatal error: Invalid credentials during login",
+        "troubleshooting": "Ensure the correct username and password are being used; check for account lockout or suspension."
+    },
+    {
+        "error": "System overload",
+        "message": "High severity error: System overload, shutting down",
+        "troubleshooting": "Monitor system resource usage; optimize application performance and scaling."
+    },
+    {
+        "error": "Unsupported media type",
+        "message": "Invalid request: Unsupported media type",
+        "troubleshooting": "Verify that the media type specified in the request is supported by the server."
+    },
+    {
+        "error": "403 Forbidden",
+        "message": "Request to /api/v1/resource returned 403 Forbidden",
+        "troubleshooting": "Review user permissions and ensure the API key or authentication method is valid."
+    },
+    {
+        "error": "404 Not Found",
+        "message": "Invalid request: 404 Not Found",
+        "troubleshooting": "Verify the requested resource URL for accuracy and ensure the resource exists on the server."
+    },
+    {
+        "error": "Unable to continue",
+        "message": "Kernel panic: Unable to continue",
+        "troubleshooting": "Review kernel logs to diagnose the issue; consider rebooting or restoring from backup."
+    },
+    {
+        "error": "503 Service Unavailable",
+        "message": "Service temporarily unavailable: Undergoing maintenance",
+        "troubleshooting": "Check system status and maintenance schedule; ensure that services are restored post-maintenance."
+    },
+    {
+        "error": "Connection timeout",
+        "message": "Unable to connect to the database: Timeout",
+        "troubleshooting": "Check database server availability and network connectivity; increase timeout settings if necessary."
+    },
+    {
+        "error": "Critical error",
+        "message": "Critical error: Could not connect to MySQL server",
+        "troubleshooting": "Ensure MySQL server is running, check connection parameters, and verify network settings."
+    }
+]
+[
+    {
+        "error": "Missing required parameters",
+        "message": "Invalid request: Missing required parameters",
+        "troubleshooting": "Ensure that all required parameters are included in the request and validate the API documentation."
+    },
+    {
+        "error": "Connection reset during upload",
+        "message": "Connection reset during upload",
+        "troubleshooting": "Investigate network stability and check server logs for any issues during the upload process."
+    },
+    {
+        "error": "Connection lost",
+        "message": "Critical database error: Connection lost",
+        "troubleshooting": "Check for network issues, database server status, and resource limits on the database."
+    },
+    {
+        "error": "System overload",
+        "message": "High severity error: System overload, shutting down",
+        "troubleshooting": "Monitor system resource usage; optimize application performance and consider scaling resources."
+    },
+    {
+        "error": "Missing Content-Length header",
+        "message": "Invalid request: Missing Content-Length header",
+        "troubleshooting": "Ensure the Content-Length header is correctly set in the request; review the request body for size."
+    },
+    {
+        "error": "500 Internal Server Error",
+        "message": "Invalid request: 500 Internal Server Error",
+        "troubleshooting": "Examine server logs for detailed error messages; check for code issues or server misconfigurations."
+    },
+    {
+        "error": "Unexpected shutdown",
+        "message": "Critical application error: Unexpected shutdown",
+        "troubleshooting": "Analyze application logs for errors preceding the shutdown and ensure sufficient system resources."
+    },
+    {
+        "error": "Unable to reach external service",
+        "message": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check the network connection and ensure that the external service is operational."
+    },
+    {
+        "error": "Bad request syntax",
+        "message": "Invalid request: Bad request syntax",
+        "troubleshooting": "Verify request format and parameters for compliance with expected API standards."
+    },
+    {
+        "error": "403 Forbidden",
+        "message": "Request to /api/v1/orders returned 403 Forbidden",
+        "troubleshooting": "Review user permissions and ensure the API key or authentication method is valid."
+    },
+    {
+        "error": "Connection lost",
+        "message": "Critical database error: Connection lost",
+        "troubleshooting": "Check for network issues, database server status, and any resource limits on the database."
+    },
+    {
+        "error": "Disk space critically low",
+        "message": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Free up disk space by deleting unnecessary files or increase storage capacity."
+    },
+    {
+        "error": "Invalid API key",
+        "message": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Verify that the API key is valid and that the account has the necessary permissions."
+    },
+    {
+        "error": "Connection reset during upload",
+        "message": "Connection reset during upload",
+        "troubleshooting": "Investigate network stability and check server logs for any issues during the upload process."
+    },
+    {
+        "error": "Invalid credentials",
+        "message": "Fatal error: Invalid credentials during login",
+        "troubleshooting": "Ensure the correct username and password are being used; check for account lockout or suspension."
+    },
+    {
+        "error": "System overload",
+        "message": "High severity error: System overload, shutting down",
+        "troubleshooting": "Monitor system resource usage; optimize application performance and scaling."
+    },
+    {
+        "error": "Unsupported media type",
+        "message": "Invalid request: Unsupported media type",
+        "troubleshooting": "Verify that the media type specified in the request is supported by the server."
+    },
+    {
+        "error": "403 Forbidden",
+        "message": "Request to /api/v1/resource returned 403 Forbidden",
+        "troubleshooting": "Review user permissions and ensure the API key or authentication method is valid."
+    },
+    {
+        "error": "404 Not Found",
+        "message": "Invalid request: 404 Not Found",
+        "troubleshooting": "Verify the requested resource URL for accuracy and ensure the resource exists on the server."
+    },
+    {
+        "error": "Unable to continue",
+        "message": "Kernel panic: Unable to continue",
+        "troubleshooting": "Review kernel logs to diagnose the issue; consider rebooting or restoring from backup."
+    },
+    {
+        "error": "503 Service Unavailable",
+        "message": "Service temporarily unavailable: Undergoing maintenance",
+        "troubleshooting": "Check system status and maintenance schedule; ensure that services are restored post-maintenance."
+    },
+    {
+        "error": "Connection timeout",
+        "message": "Unable to connect to the database: Timeout",
+        "troubleshooting": "Check database server availability and network connectivity; increase timeout settings if necessary."
+    },
+    {
+        "error": "Critical error",
+        "message": "Critical error: Could not connect to MySQL server",
+        "troubleshooting": "Ensure MySQL server is running, check connection parameters, and verify network settings."
+    }
+]
+[
+    {
+        "error": "Missing parameters",
+        "troubleshooting": "Check API documentation for required parameters. Ensure client requests include all necessary data."
+    },
+    {
+        "error": "404 Not Found",
+        "troubleshooting": "Verify the requested URL exists. Check routing configurations."
+    },
+    {
+        "error": "Unhandled exception",
+        "troubleshooting": "Review application logs for stack traces. Implement error handling to prevent crashes."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "troubleshooting": "Investigate hardware issues or resource limits. Check system logs for further details."
+    },
+    {
+        "error": "Bad request syntax",
+        "troubleshooting": "Review request format. Ensure it conforms to HTTP standards."
+    },
+    {
+        "error": "403 Forbidden",
+        "troubleshooting": "Check permissions for the requested resource. Ensure proper authentication is in place."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "troubleshooting": "Verify database server status. Check for network issues and timeout settings."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Clean up disk space by removing unnecessary files. Monitor disk usage regularly."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Verify API keys being used. Regenerate and update keys as necessary."
+    },
+    {
+        "error": "Connection reset during upload",
+        "troubleshooting": "Check server load and network stability. Increase timeout settings if necessary."
+    },
+    {
+        "error": "Invalid credentials during login",
+        "troubleshooting": "Ensure user credentials are correct. Implement account lockout after several failed attempts."
+    },
+    {
+        "error": "System overload, shutting down",
+        "troubleshooting": "Monitor system load. Scale resources or optimize processes to reduce load."
+    },
+    {
+        "error": "500 Internal Server Error",
+        "troubleshooting": "Check server logs for detailed error messages. Debug the application code."
+    },
+    {
+        "error": "Unable to connect to the database: Timeout",
+        "troubleshooting": "Verify database server availability and network connectivity. Increase connection timeout settings."
+    },
+    {
+        "error": "Critical error: Could not connect to MySQL server",
+        "troubleshooting": "Check MySQL server status and configurations. Verify network connectivity."
+    },
+    {
+        "error": "File does not exist",
+        "troubleshooting": "Verify the file path and ensure the file is present on the server."
+    },
+    {
+        "error": "Permission denied",
+        "troubleshooting": "Check file and directory permissions. Ensure the web server has access rights."
+    },
+    {
+        "error": "Timeout while waiting for response from upstream server",
+        "troubleshooting": "Check the upstream server status and performance. Increase timeout settings if needed."
+    },
+    {
+        "error": "Database connection lost: Could not reach database",
+        "troubleshooting": "Check network connectivity to the database server. Verify server status."
+    },
+    {
+        "error": "Kernel panic: system failure due to hardware issue",
+        "troubleshooting": "Investigate hardware health. Replace faulty components if necessary."
+    },
+    {
+        "error": "Symbolic link not allowed or link target not accessible",
+        "troubleshooting": "Check server configurations for allowed symbolic links. Ensure link target is accessible."
+    },
+    {
+        "error": "Failed to allocate memory for Apache process",
+        "troubleshooting": "Monitor server memory usage. Increase server memory or optimize applications."
+    },
+    {
+        "error": "Web server is down, action required",
+        "troubleshooting": "Restart the web server. Check server logs for errors and troubleshoot."
+    },
+    {
+        "error": "Apache process killed due to out-of-memory condition",
+        "troubleshooting": "Monitor memory usage. Optimize applications or increase server memory."
+    },
+    {
+        "error": "Invalid method in request",
+        "troubleshooting": "Ensure the request method matches server configurations. Review API documentation."
+    },
+    {
+        "error": "Segmentation fault: Core dumped",
+        "troubleshooting": "Investigate application code for memory access violations. Debug and fix memory issues."
+    },
+    {
+        "error": "CGI script timed out after 60 seconds",
+        "troubleshooting": "Optimize CGI script performance. Increase timeout settings if necessary."
+    },
+    {
+        "error": "Kernel memory leak detected, action required",
+        "troubleshooting": "Identify and fix the source of memory leaks in the application."
+    },
+    {
+        "error": "High memory usage detected, action required immediately",
+        "troubleshooting": "Monitor and optimize memory usage. Consider scaling resources."
+    },
+    {
+        "error": "Low disk space warning",
+        "troubleshooting": "Free up disk space by removing unnecessary files. Monitor disk usage regularly."
+    },
+    {
+        "error": "Fatal error: Could not open required file",
+        "troubleshooting": "Check file paths and permissions. Ensure the required file exists."
+    }
+]
+[
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "troubleshooting": "Check the request permissions and ensure the user has access."
+    },
+    {
+        "error": "Fatal error: Invalid credentials during login",
+        "troubleshooting": "Verify user credentials and ensure they are correct."
+    },
+    {
+        "error": "High severity error: System crash detected",
+        "troubleshooting": "Investigate system logs for crash details and system performance metrics."
+    },
+    {
+        "error": "Invalid request: Missing parameters",
+        "troubleshooting": "Review the API documentation and ensure all required parameters are provided."
+    },
+    {
+        "error": "Request to /api/v1/orders returned 404 Not Found",
+        "troubleshooting": "Check if the endpoint exists and is spelled correctly."
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "troubleshooting": "Debug the application code to handle exceptions appropriately."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Free up disk space or increase disk capacity."
+    },
+    {
+        "error": "Unable to connect to the database: Timeout",
+        "troubleshooting": "Check database server status and network connectivity."
+    },
+    {
+        "error": "Critical error: Could not connect to MySQL server",
+        "troubleshooting": "Verify MySQL server status and configurations."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "troubleshooting": "Investigate hardware issues and system stability."
+    },
+    {
+        "error": "Invalid request: 500 Internal Server Error",
+        "troubleshooting": "Check server logs for errors and debug the application."
+    },
+    {
+        "error": "Fatal error: Invalid credentials provided during login",
+        "troubleshooting": "Verify user credentials and ensure they are correct."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check network connectivity and external service availability."
+    },
+    {
+        "error": "Invalid request: Missing Content-Length header",
+        "troubleshooting": "Ensure the request includes a Content-Length header."
+    },
+    {
+        "error": "Connection reset during upload",
+        "troubleshooting": "Check network stability during file uploads."
+    },
+    {
+        "error": "Critical error: Unable to connect to the database",
+        "troubleshooting": "Verify database server status and connection parameters."
+    },
+    {
+        "error": "High severity error: System overload, shutting down",
+        "troubleshooting": "Analyze system resource usage and optimize performance."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Ensure the API key is valid and has the necessary permissions."
+    },
+    {
+        "error": "Request to /api/v1/resource returned 403 Forbidden",
+        "troubleshooting": "Check the request permissions and ensure the user has access."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "troubleshooting": "Investigate database server status and connection configurations."
+    },
+    {
+        "error": "Service temporarily unavailable: Undergoing maintenance",
+        "troubleshooting": "Schedule maintenance and inform users in advance."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "troubleshooting": "Review the request format and ensure it adheres to the API specifications."
+    },
+    {
+        "error": "Unable to write to log file: Permission denied",
+        "troubleshooting": "Check file permissions and ensure the application has write access."
+    },
+    {
+        "error": "Critical application error: Unexpected shutdown",
+        "troubleshooting": "Debug the application to find causes for unexpected shutdowns."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Free up disk space or increase disk capacity."
+    },
+    {
+        "error": "Invalid request: 500 Internal Server Error",
+        "troubleshooting": "Check server logs for errors and debug the application."
+    },
+    {
+        "error": "High severity error: System overload, shutting down",
+        "troubleshooting": "Analyze system resource usage and optimize performance."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "troubleshooting": "Investigate database server status and connection configurations."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check network connectivity and external service availability."
+    }
+]
+[
+    {
+        "error": "500 Internal Server Error",
+        "troubleshooting": "Check server logs for details and ensure the server is functioning properly."
+    },
+    {
+        "error": "Unable to connect to the database",
+        "troubleshooting": "Verify database server status and connection parameters."
+    },
+    {
+        "error": "High severity error: System crash detected",
+        "troubleshooting": "Investigate recent changes and hardware issues."
+    },
+    {
+        "error": "Resource not found: /api/v1/resource",
+        "troubleshooting": "Check if the resource exists and is accessible."
+    },
+    {
+        "error": "Application crash: Unhandled exception",
+        "troubleshooting": "Review application error handling and logs."
+    },
+    {
+        "error": "Service temporarily unavailable: Undergoing maintenance",
+        "troubleshooting": "Ensure that maintenance is scheduled and communicated."
+    },
+    {
+        "error": "Invalid request: 404 Not Found",
+        "troubleshooting": "Confirm the requested URL is correct."
+    },
+    {
+        "error": "Database connection failed",
+        "troubleshooting": "Check database service status and configuration."
+    },
+    {
+        "error": "Invalid credentials during login attempt",
+        "troubleshooting": "Verify user credentials and authentication process."
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "troubleshooting": "Inspect application logs for details on the exception."
+    },
+    {
+        "error": "Out of memory while processing request",
+        "troubleshooting": "Analyze memory usage and optimize resource allocation."
+    },
+    {
+        "error": "Too many connections",
+        "troubleshooting": "Limit the maximum number of connections or optimize existing connections."
+    },
+    {
+        "error": "Unable to write to log file: Permission denied",
+        "troubleshooting": "Check file permissions and ensure the application has write access."
+    },
+    {
+        "error": "Connection reset during upload",
+        "troubleshooting": "Investigate network stability and server handling of uploads."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "troubleshooting": "Review request format and content."
+    },
+    {
+        "error": "Service unavailable: Too many connections",
+        "troubleshooting": "Implement connection pooling or review connection handling."
+    },
+    {
+        "error": "Disk space critically low: less than 5% available",
+        "troubleshooting": "Free up disk space or expand storage."
+    },
+    {
+        "error": "Critical error: Could not connect to MySQL server",
+        "troubleshooting": "Check MySQL server status and connection settings."
+    },
+    {
+        "error": "Fatal error: Invalid credentials for database",
+        "troubleshooting": "Ensure database user credentials are correct."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "troubleshooting": "Investigate hardware or kernel-related issues."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check network connectivity and external service status."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "troubleshooting": "Review database logs and ensure database service is running."
+    },
+    {
+        "error": "Invalid request: Missing Content-Length header",
+        "troubleshooting": "Ensure requests include a valid Content-Length header."
+    },
+    {
+        "error": "Invalid request: Missing parameters",
+        "troubleshooting": "Check request for required parameters."
+    },
+    {
+        "error": "Invalid request: Unsupported media type",
+        "troubleshooting": "Verify that the media type is supported by the server."
+    },
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "troubleshooting": "Check permissions and user access levels."
+    }
+]
+[
+    {
+        "error": "Invalid request: Bad request syntax",
+        "troubleshooting": "Check request format and syntax."
+    },
+    {
+        "error": "Application crash: Unhandled exception",
+        "troubleshooting": "Investigate logs for exception details and fix underlying code issues."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "troubleshooting": "Verify network connectivity and service availability."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Ensure correct API key is used and not expired."
+    },
+    {
+        "error": "Unable to connect to the database: Timeout",
+        "troubleshooting": "Check database server status and increase timeout settings if necessary."
+    },
+    {
+        "error": "Resource limit exceeded: Unable to allocate new connection",
+        "troubleshooting": "Increase resource limits or optimize connection usage."
+    },
+    {
+        "error": "High severity error: System crash detected",
+        "troubleshooting": "Analyze crash logs and perform system diagnostics."
+    },
+    {
+        "error": "Invalid request: Unsupported media type",
+        "troubleshooting": "Check if the content type of the request is supported."
+    },
+    {
+        "error": "Failed to retrieve data: Connection reset",
+        "troubleshooting": "Investigate network issues or server availability."
+    },
+    {
+        "error": "Fatal error: Invalid credentials for database",
+        "troubleshooting": "Verify database credentials and permissions."
+    },
+    {
+        "error": "Critical security alert: Potential DDoS attack detected",
+        "troubleshooting": "Implement rate limiting and monitor traffic patterns."
+    },
+    {
+        "error": "Invalid request: Missing Content-Length header",
+        "troubleshooting": "Ensure that the Content-Length header is included in requests."
+    },
+    {
+        "error": "Invalid request: 403 Forbidden",
+        "troubleshooting": "Check permissions for the requested resource."
+    },
+    {
+        "error": "Critical database error: Connection lost",
+        "troubleshooting": "Check database server status and connectivity."
+    },
+    {
+        "error": "Service temporarily unavailable: Undergoing maintenance",
+        "troubleshooting": "Notify users of maintenance windows and monitor service status."
+    },
+    {
+        "error": "Connection reset during upload",
+        "troubleshooting": "Check for network stability and file size limits."
+    },
+    {
+        "error": "Critical application error: Unhandled exception",
+        "troubleshooting": "Review application logs for error details and debug."
+    },
+    {
+        "error": "High severity error: System overload, shutting down",
+        "troubleshooting": "Optimize resource usage and scale infrastructure if needed."
+    },
+    {
+        "error": "Potential SQL injection attempt detected",
+        "troubleshooting": "Sanitize inputs."
+    }
+]
+[
+    {
+        "error": "Invalid request: Missing required parameters",
+        "troubleshooting": "Check if all required parameters are included in the request."
+    },
+    {
+        "error": "Failed to save file: /var/www/html/uploads/video.mp4",
+        "troubleshooting": "Verify file permissions and disk space."
+    },
+    {
+        "error": "Application crash: Unsupported operation attempted",
+        "troubleshooting": "Review application logic to ensure supported operations are used."
+    },
+    {
+        "error": "High severity error: System crash detected",
+        "troubleshooting": "Investigate system logs for root cause and apply necessary patches."
+    },
+    {
+        "error": "Potential buffer overflow detected",
+        "troubleshooting": "Validate input data and apply bounds checking."
+    },
+    {
+        "error": "Request to /api/v1/admin returned 404 Not Found",
+        "troubleshooting": "Ensure the endpoint exists and is correctly spelled."
+    },
+    {
+        "error": "Critical application error: Unexpected exception",
+        "troubleshooting": "Debug application code to identify unhandled exceptions."
+    },
+    {
+        "error": "Service unavailable: Routine maintenance",
+        "troubleshooting": "Notify users of scheduled maintenance windows."
+    },
+    {
+        "error": "User attempted to access restricted area",
+        "troubleshooting": "Check user permissions and roles."
+    },
+    {
+        "error": "Unable to connect to external API: Timeout",
+        "troubleshooting": "Test the connectivity to the external API."
+    },
+    {
+        "error": "Database connection failed: Host unreachable",
+        "troubleshooting": "Verify database host address and network settings."
+    },
+    {
+        "error": "Disk error: Unable to read from disk",
+        "troubleshooting": "Check disk health and filesystem integrity."
+    },
+    {
+        "error": "User session expired: Please log in again",
+        "troubleshooting": "Prompt user to log in again."
+    },
+    {
+        "error": "Invalid file format: Only .jpg and .png allowed",
+        "troubleshooting": "Validate file extension before upload."
+    },
+    {
+        "error": "Fatal error: Unable to allocate memory for new thread",
+        "troubleshooting": "Monitor memory usage and optimize resource allocation."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check network configurations and service availability."
+    },
+    {
+        "error": "Invalid request: Missing Content-Type header",
+        "troubleshooting": "Ensure the Content-Type header is set in the request."
+    },
+    {
+        "error": "Connection timeout during API request",
+        "troubleshooting": "Increase timeout settings or check server performance."
+    },
+    {
+        "error": "Critical error: Unhandled exception occurred",
+        "troubleshooting": "Implement error handling to catch unexpected exceptions."
+    },
+    {
+        "error": "System overload: Too many open files",
+        "troubleshooting": "Increase file descriptor limits and optimize file handling."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Verify API key and permissions."
+    },
+    {
+        "error": "Failed to retrieve data: Connection reset",
+        "troubleshooting": "Check network stability and database connection settings."
+    },
+    {
+        "error": "Resource limit exceeded: Unable to allocate new connection",
+        "troubleshooting": "Review resource limits and optimize database connections."
+    },
+    {
+        "error": "Critical security alert: Potential DDoS attack detected",
+        "troubleshooting": "Implement rate limiting and monitor traffic."
+    },
+    {
+        "error": "Invalid request: Unsupported media type",
+        "troubleshooting": "Check the media type being sent in the request."
+    },
+    {
+        "error": "Resource not found: Unable to access /api/v1/profile",
+        "troubleshooting": "Verify the endpoint and resource availability."
+    },
+    {
+        "error": "Fatal error: Invalid credentials for database",
+        "troubleshooting": "Check database username and password."
+    },
+    {
+        "error": "Kernel panic: Unable to continue",
+        "troubleshooting": "Review kernel logs for underlying issues."
+    },
+    {
+        "error": "Client disconnected unexpectedly",
+        "troubleshooting": "Investigate client-side network issues."
+    },
+    {
+        "error": "Scheduled job completed: cleanup_logs",
+        "troubleshooting": "Ensure cleanup job is configured correctly."
+    },
+    {
+        "error": "Invalid request: Bad request syntax",
+        "troubleshooting": "Review the request format for compliance with the API specification."
+    },
+    {
+        "error": "Application crash: Unhandled exception",
+        "troubleshooting": "Implement comprehensive error handling."
+    },
+    {
+        "error": "Network failure: Unable to reach external service",
+        "troubleshooting": "Check network configurations and external service status."
+    },
+    {
+        "error": "Unauthorized access attempt: Invalid API key",
+        "troubleshooting": "Verify API key and check user roles."
+    },
+    {
+        "error": "Unable to connect to the database: Timeout",
+        "troubleshooting": "Increase timeout settings and check database performance."
+    },
+    {
+        "error": "Resource limit exceeded: Unable to allocate new connection",
+        "troubleshooting": "Review database connection limits and optimize usage."
+    },
+    {
+        "error": "High severity error: System crash detected",
+        "troubleshooting": "Investigate logs for root cause analysis."
+    }
+]
+[
+    {
+        "error": "File does not exist",
+        "troubleshooting": "Check if the file /var/www/html/docs/readme.txt exists."
+    },
+    {
+        "error": "Client denied by server configuration",
+        "troubleshooting": "Review server configuration settings to ensure the client is allowed access to /var/www/html/secret/."
+    },
+    {
+        "error": "Maximum execution time exceeded",
+        "troubleshooting": "Increase the maximum execution time in PHP settings or optimize the script."
+    },
+    {
+        "error": "Could not establish connection to the LDAP server",
+        "troubleshooting": "Ensure the LDAP server is running and check the network connection."
+    },
+    {
+        "error": "Script execution took too long",
+        "troubleshooting": "Optimize the script to reduce execution time or increase the timeout limit."
+    },
+    {
+        "error": "SQL query failed: Incorrect syntax",
+        "troubleshooting": "Review the SQL query for syntax errors near 'FROM'."
+    },
+    {
+        "error": "Uncaught exception 'DivisionByZeroError'",
+        "troubleshooting": "Check for division operations that may lead to division by zero."
+    },
+    {
+        "error": "System out of memory",
+        "troubleshooting": "Free up memory resources or increase the memory limit."
+    },
+    {
+        "error": "Division by zero",
+        "troubleshooting": "Add checks to prevent division by zero in your calculations."
+    },
+    {
+        "error": "Failed to write to log file",
+        "troubleshooting": "Check file permissions for the log file and ensure the server user has write access."
+    },
+    {
+        "error": "Invalid username/password combination",
+        "troubleshooting": "Verify the provided username and password."
+    },
+    {
+        "error": "Invalid directive 'Options Indexes'",
+        "troubleshooting": "Correct the directive in the configuration file or remove it if not needed."
+    },
+    {
+        "error": "Client closed connection before response was sent",
+        "troubleshooting": "Investigate client behavior and ensure the server processes requests appropriately."
+    },
+    {
+        "error": "PHP Fatal error: Call to undefined function mysql_query()",
+        "troubleshooting": "Ensure the mysql extension is installed and enabled in your PHP configuration."
+    },
+    {
+        "error": "Could not read request body",
+        "troubleshooting": "Check if the request body is sent correctly and not prematurely terminated."
+    },
+    {
+        "error": "MaxRequestWorkers setting reached",
+        "troubleshooting": "Increase the MaxRequestWorkers limit in your server configuration."
+    },
+    {
+        "error": "Apache web server unexpectedly stopped",
+        "troubleshooting": "Check server logs for more details on why Apache stopped and restart it."
+    },
+    {
+        "error": "PHP Fatal error: Call to a member function fetch() on a non-object",
+        "troubleshooting": "Check the database connection and ensure the fetch() method is called on a valid object."
+    },
+    {
+        "error": "Unable to bind to server",
+        "troubleshooting": "Check if the address is already in use by another service."
+    },
+    {
+        "error": "Authentication failed: User account locked",
+        "troubleshooting": "Unlock the user account and verify the authentication settings."
+    },
+    {
+        "error": "Client sent malformed request",
+        "troubleshooting": "Ensure the client sends requests in the correct format."
+    },
+    {
+        "error": "Directory index forbidden by rule",
+        "troubleshooting": "Check server configuration to allow directory indexing if required."
+    },
+    {
+        "error": "Script not found or unable to stat",
+        "troubleshooting": "Verify that the script /var/www/html/cgi-bin/test.cgi exists."
+    },
+    {
+        "error": "Session write failed: Disk quota exceeded",
+        "troubleshooting": "Free up disk space or increase the disk quota."
+    },
+    {
+        "error": "Network unreachable while connecting to upstream",
+        "troubleshooting": "Check network connectivity to the upstream server."
+    },
+    {
+        "error": "Child process exited with status 1",
+        "troubleshooting": "Investigate the child's exit status and logs for potential issues."
+    },
+    {
+        "error": "Connection from client closed successfully",
+        "troubleshooting": "This is an informational message; no action is required."
+    },
+    {
+        "error": "SQLSTATE[23000]: Integrity constraint violation: Duplicate entry",
+        "troubleshooting": "Check for unique constraints and ensure no duplicate data is being inserted."
+    },
+    {
+        "error": "PHP Fatal error: Allowed memory size exhausted",
+        "troubleshooting": "Increase the memory limit in the PHP configuration or optimize your scripts."
+    },
+    {
+        "error": "Too many failed login attempts",
+        "troubleshooting": "Consider implementing a captcha or locking accounts for a specific duration."
+    },
+    {
+        "error": "Invalid character encoding in POST data",
+        "troubleshooting": "Ensure that the client sends POST data with the correct character encoding."
+    },
+    {
+        "error": "File does not exist",
+        "troubleshooting": "Check if the file /var/www/html/404.html exists."
+    },
+    {
+        "error": "Cannot find module mod_security.so",
+        "troubleshooting": "Ensure mod_security is installed and configured correctly."
+    },
+    {
+        "error": "MySQL query failed: Table is marked as crashed",
+        "troubleshooting": "Repair the crashed table using MySQL commands."
+    },
+    {
+        "error": "Kernel panic: Cannot allocate socket buffer",
+        "troubleshooting": "Check system resources and consider increasing buffer sizes."
+    },
+    {
+        "error": "Connection timeout while retrieving large file",
+        "troubleshooting": "Increase the timeout limit or optimize file transfer methods."
+    },
+    {
+        "error": "Client closed connection while processing request",
+        "troubleshooting": "Investigate client behavior and server handling of requests."
+    },
+    {
+        "error": "PHP Fatal error: Uncaught Error: Class 'Redis' not found",
+        "troubleshooting": "Install the Redis extension for PHP and ensure it's loaded."
+    },
+    {
+        "error": "Remote server unavailable",
+        "troubleshooting": "Check the remote server status and network connection."
+    },
+    {
+        "error": "Cache entry for key expired",
+        "troubleshooting": "Implement a caching strategy to refresh expired entries."
+    },
+    {
+        "error": "File does not exist",
+        "troubleshooting": "Check if the file /var/www/html/favicon.ico exists."
+    },
+    {
+        "error": "Failed to resolve hostname",
+        "troubleshooting": "Verify the hostname and ensure DNS is functioning correctly."
+    },
+    {
+        "error": "Unable to allocate memory for MySQL connection",
+        "troubleshooting": "Increase the available memory or optimize MySQL configurations."
+    },
+    {
+        "error": "Power failure detected",
+        "troubleshooting": "Check power supply and server logs to prevent data corruption."
+    },
+    {
+        "error": "Client provided invalid session cookie",
+        "troubleshooting": "Ensure the session cookie is correctly set and valid."
+    },
+    {
+        "error": "Successfully redirected to HTTPS version of the site",
+        "troubleshooting": "No action required; this is an informational message."
+    },
+    {
+        "error": "ModSecurity: Access denied",
+        "troubleshooting": "Check ModSecurity rules and adjust them if necessary."
+    },
+    {
+        "error": "Failed to allocate shared memory segment",
+        "troubleshooting": "Check system resource limits and increase shared memory if possible."
+    },
+    {
+        "error": "PHP Warning: Use of undefined constant",
+        "troubleshooting": "Define the constant before using it in your code."
+    },
+    {
+        "error": "File does not exist",
+        "troubleshooting": "Check if the file /var/www/html/logs/maintenance.txt exists."
+    },
+    {
+        "error": "Unable to write to /tmp/session.lock",
+        "troubleshooting": "Check permissions for the /tmp directory."
+    },
+    {
+        "error": "Request length exceeds the limit",
+        "troubleshooting": "Increase the request size limit in the server configuration."
+    },
+    {
+        "error": "Client requested a page that does not exist",
+        "troubleshooting": "Verify the URL and ensure the requested page exists."
+    },
+    {
+        "error": "Directory index file not found",
+        "troubleshooting": "Ensure an index file exists in the directory or configure index settings."
+    },
+    {
+        "error": "Proxy error: DNS lookup failure",
+        "troubleshooting": "Verify DNS settings and ensure the proxy server is reachable."
+    },
+    {
+        "error": "PHP Fatal error: Uncaught TypeError",
+        "troubleshooting": "Ensure that the correct data types are passed to functions."
+    },
+    {
+        "error": "System overrun: Maximum open sockets exceeded",
+        "troubleshooting": "Check socket usage and increase limits if necessary."
+    },
+    {
+        "error": "Proxy balancer member is marked down",
+        "troubleshooting": "Investigate the health of the proxy member and ensure it’s up."
+    },
+    {
+        "error": "File does not exist",
+        "troubleshooting": "Check if the file /var/www/html/robots.txt exists."
+    },
+    {
+        "error": "Memory leak detected in application",
+        "troubleshooting": "Use memory profiling tools to identify and fix leaks."
+    },
+    {
+        "error": "Warning: session_start(): Cannot send session cache limiter - headers already sent",
+        "troubleshooting": "Ensure no output is sent before session_start()."
+    }
+]
+[
+    {
+        "error": "File does not exist: /var/www/html/xmlrpc",
+        "troubleshooting": "Check if the specified file exists at the mentioned path."
+    },
+    {
+        "error": "PHP Fatal error: Call to undefined function",
+        "troubleshooting": "Verify if the function is defined and loaded correctly."
+    },
+    {
+        "error": "Failed to load resource: Connection reset by peer",
+        "troubleshooting": "Check server and network configuration to ensure resources can be loaded."
+    },
+    {
+        "error": "File not found: /var/www/html/styles.css",
+        "troubleshooting": "Ensure the styles.css file exists in the specified location."
+    },
+    {
+        "error": "Unable to allocate memory for session",
+        "troubleshooting": "Increase memory limit in php.ini or check server resources."
+    },
+    {
+        "error": "Database query failed: Table 'users' doesn't exist",
+        "troubleshooting": "Ensure the 'users' table is created in the database."
+    },
+    {
+        "error": "Syntax error: Unexpected token '<' in JSON",
+        "troubleshooting": "Check JSON formatting and ensure valid JSON syntax."
+    },
+    {
+        "error": "Invalid argument supplied for foreach() in /var/www/html/utils.php",
+        "troubleshooting": "Ensure the argument passed to foreach() is an array."
+    },
+    {
+        "error": "Could not read from socket: Connection timed out",
+        "troubleshooting": "Check network connectivity and server status."
+    },
+    {
+        "error": "Access denied for user 'admin'@'localhost' (using password: YES)",
+        "troubleshooting": "Verify database credentials and permissions."
+    },
+    {
+        "error": "File does not exist: /var/www/html/favicon.ico",
+        "troubleshooting": "Ensure the favicon.ico file exists in the specified location."
+    },
+    {
+        "error": "Unknown column 'email' in 'field list'",
+        "troubleshooting": "Check database schema to ensure 'email' column exists."
+    },
+    {
+        "error": "Script timed out before returning headers",
+        "troubleshooting": "Increase the script execution time limit in php.ini."
+    },
+    {
+        "error": "Error establishing a database connection",
+        "troubleshooting": "Check database server status and credentials."
+    },
+    {
+        "error": "File upload failed: File too large",
+        "troubleshooting": "Increase upload_max_filesize in php.ini."
+    },
+    {
+        "error": "Could not find driver for MySQL",
+        "troubleshooting": "Ensure MySQL driver is installed and enabled in PHP."
+    },
+    {
+        "error": "Unknown error occurred in application",
+        "troubleshooting": "Investigate application logs for further details."
+    },
+    {
+        "error": "PHP Parse error: syntax error, unexpected '}' in /var/www/html/index.php on line 33",
+        "troubleshooting": "Check for syntax errors in the PHP code."
+    },
+    {
+        "error": "Module not found: 'mod_rewrite'",
+        "troubleshooting": "Ensure mod_rewrite is enabled in the Apache configuration."
+    },
+    {
+        "error": "PHP Fatal error: Maximum execution time exceeded in /var/www/html/process.php",
+        "troubleshooting": "Increase the maximum execution time in php.ini."
+    },
+    {
+        "error": "File does not exist: /var/www/html/contact.html",
+        "troubleshooting": "Ensure the contact.html file exists in the specified location."
+    },
+    {
+        "error": "Unable to write to file: Permission denied",
+        "troubleshooting": "Check file permissions for write access."
+    },
+    {
+        "error": "Apache shutdown unexpectedly",
+        "troubleshooting": "Check Apache error logs for crash details."
+    },
+    {
+        "error": "SQL query failed: Column 'id' cannot be null",
+        "troubleshooting": "Ensure 'id' column is set to auto-increment or provide a valid value."
+    },
+    {
+        "error": "File does not exist: /var/www/html/images/logo.png",
+        "troubleshooting": "Ensure the logo.png file exists in the specified location."
+    },
+    {
+        "error": "Failed to initialize session: session_start(): Failed to read session data",
+        "troubleshooting": "Check session storage configuration and permissions."
+    },
+    {
+        "error": "Out of memory: Kill process 1234",
+        "troubleshooting": "Increase memory limit or optimize the application."
+    },
+    {
+        "error": "Could not connect to Redis server",
+        "troubleshooting": "Ensure Redis server is running and accessible."
+    },
+    {
+        "error": "File does not exist: /var/www/html/admin.php",
+        "troubleshooting": "Ensure the admin.php file exists in the specified location."
+    },
+    {
+        "error": "Permission denied: Unable to access file",
+        "troubleshooting": "Check file permissions for access."
+    },
+    {
+        "error": "Connection reset by peer: mod_fcgid: read data timeout in 120 seconds",
+        "troubleshooting": "Increase timeout settings for FastCGI."
+    },
+    {
+        "error": "Invalid file extension detected",
+        "troubleshooting": "Check file extension restrictions in the server configuration."
+    },
+    {
+        "error": "SSL certificate problem: self-signed certificate in chain",
+        "troubleshooting": "Replace with a valid SSL certificate."
+    },
+    {
+        "error": "Could not execute script: Permission denied",
+        "troubleshooting": "Check file permissions for execution."
+    },
+    {
+        "error": "Database locked: Unable to open database file",
+        "troubleshooting": "Ensure the database is not locked by another process."
+    },
+    {
+        "error": "File does not exist: /var/www/html/main.js",
+        "troubleshooting": "Ensure the main.js file exists in the specified location."
+    },
+    {
+        "error": "No such file or directory: Error loading module",
+        "troubleshooting": "Check if the module is installed and properly configured."
+    },
+    {
+        "error": "PHP Fatal error: Call to undefined method",
+        "troubleshooting": "Verify that the method is defined and accessible."
+    },
+    {
+        "error": "Could not open file: Too many open files",
+        "troubleshooting": "Increase the limit for open files in system configuration."
+    },
+    {
+        "error": "Script terminated unexpectedly",
+        "troubleshooting": "Investigate the script and server logs for errors."
+    },
+    {
+        "error": "Failed to authenticate user: Invalid credentials",
+        "troubleshooting": "Check user credentials and account status."
+    },
+    {
+        "error": "File does not exist: /var/www/html/404.html",
+        "troubleshooting": "Ensure the 404.html file exists in the specified location."
+    },
+    {
+        "error": "Failed to allocate memory for buffer",
+        "troubleshooting": "Increase memory limit or optimize memory usage."
+    },
+    {
+        "error": "File does not exist: /var/www/html/downloads/file.zip",
+        "troubleshooting": "Ensure the file.zip exists in the specified location."
+    },
+    {
+        "error": "Could not connect to database: Connection refused",
+        "troubleshooting": "Check database server status and connection settings."
+    },
+    {
+        "error": "Module 'mod_php' not found",
+        "troubleshooting": "Ensure mod_php is installed and enabled."
+    },
+    {
+        "error": "SSL negotiation failed: error:1408F10B:SSL routines:ssl3_get_record:wrong version number",
+        "troubleshooting": "Check SSL configuration and ensure correct protocol is used."
+    },
+    {
+        "error": "Unable to access resource: Read-only file system",
+        "troubleshooting": "Check filesystem permissions and mount options."
+    },
+    {
+        "error": "Syntax error in configuration file: /etc/apache2/apache2.conf",
+        "troubleshooting": "Check for syntax errors in the Apache configuration file."
+    },
+    {
+        "error": "Failed to create directory: Permission denied",
+        "troubleshooting": "Check permissions for the parent directory."
+    },
+    {
+        "error": "File does not exist: /var/www/html/about.html",
+        "troubleshooting": "Ensure the about.html file exists in the specified location."
+    },
+    {
+        "error": "Cache entry is stale",
+        "troubleshooting": "Clear the cache or adjust cache settings."
+    },
+    {
+        "error": "System reached max number of allowed processes",
+        "troubleshooting": "Increase the maximum allowed processes in the server configuration."
+    },
+    {
+        "error": "Disk space critically low",
+        "troubleshooting": "Free up disk space or increase disk capacity."
+    },
+    {
+        "error": "File does not exist: /var/www/html/robots.txt",
+        "troubleshooting": "Ensure the robots.txt file exists in the specified location."
+    },
+    {
+        "error": "Could not bind to address: Address already in use",
+        "troubleshooting": "Check if the address/port is already in use by another process."
+    },
+    {
+        "error": "Permission denied while accessing system settings",
+        "troubleshooting": "Check user permissions for
+
+
+
+
+
+
+
+
+
+
