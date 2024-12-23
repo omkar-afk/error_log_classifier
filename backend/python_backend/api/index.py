@@ -16,7 +16,7 @@ from ray import tune  # Add Ray Tune for hyperparameter optimization
 from torch import nn  # Add for Bidirectional LSTM
 
 
-file_path = './logss.txt'  # Replace with the path to your txt file
+file_path = '../logss.txt'  # Replace with the path to your txt file
 
 # Read log file
 with open(file_path, 'r') as file:
