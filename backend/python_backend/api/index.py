@@ -315,7 +315,7 @@ def load_models_for_prediction():
 # Example usage
 
 
-
+models = load_models_for_prediction()
 
 
 from flask import Flask, request, jsonify
