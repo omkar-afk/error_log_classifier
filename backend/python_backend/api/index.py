@@ -302,9 +302,9 @@ def load_models_for_prediction():
     models = {}
     # Define model configurations with input_size, hidden_size, num_layers
     model_configs = {
-        'level': ('lstm_classifier_level_fold_1.pth', len(level_encoder.classes_), X.shape[1], 128, 2), # Add input_size, hidden_size, num_layers
-        'severity': ('lstm_classifier_severity_fold_1.pth', len(severity_encoder.classes_), X.shape[1], 128, 2),  # Add input_size, hidden_size, num_layers
-        'impact': ('lstm_classifier_impact_fold_1.pth', len(impact_encoder.classes_), X.shape[1], 128, 2),  # Add input_size, hidden_size, num_layers
+        'level': ('../lstm_classifier_level_fold_1.pth', len(level_encoder.classes_), X.shape[1], 128, 2), # Add input_size, hidden_size, num_layers
+        'severity': ('../lstm_classifier_severity_fold_1.pth', len(severity_encoder.classes_), X.shape[1], 128, 2),  # Add input_size, hidden_size, num_layers
+        'impact': ('../lstm_classifier_impact_fold_1.pth', len(impact_encoder.classes_), X.shape[1], 128, 2),  # Add input_size, hidden_size, num_layers
     }
 
     for target, (model_path, num_classes, input_size, hidden_size, num_layers) in model_configs.items(): # Unpack input_size, hidden_size, num_layers
@@ -320,7 +320,6 @@ models = load_models_for_prediction()
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import threading
 
 app = Flask(__name__)
 CORS(app)
@@ -334,13 +333,3 @@ def log_error():
     output = predict_error_message(models, error_log)
     return jsonify({'message': 'Error log processed', 'result': output})
 
-# Remove the threading and ngrok setup
-if __name__ == '__main__':
-    # Get the port from environment variable (Render will provide this)
-    port = int(os.environ.get('PORT', 3000))
-    
-    # Load your models here
-    models = load_models_for_prediction()
-    
-    # Run the app
-    app.run(host='0.0.0.0', port=port)
