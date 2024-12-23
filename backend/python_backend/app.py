@@ -342,7 +342,7 @@ def log_error():
 
 # Start the Flask app in a thread
 def run_flask():
-    app.run(host='0.0.0.0', port=3002)
+    app.run(host='0.0.0.0', port=10000)
 
 flask_thread = threading.Thread(target=run_flask)
 flask_thread.start()
