@@ -313,8 +313,8 @@ def load_models_for_prediction():
     return models
 
 # Example usage
-error_message = "[Fri Aug 17 14:29:51 2007] [warn] [client 192.168.1.99] Module not found: 'mod_rewrite'"
-models = load_models_for_prediction()
+
+
 
 
 
@@ -337,7 +337,7 @@ def log_error():
 # Remove the threading and ngrok setup
 if __name__ == '__main__':
     # Get the port from environment variable (Render will provide this)
-    port = int(os.environ.get('PORT', 3000))
+    port = 3000
     
     # Load your models here
     models = load_models_for_prediction()
