@@ -313,8 +313,8 @@ def load_models_for_prediction():
     return models
 
 # Example usage
-error_message = "[Fri Aug 17 14:29:51 2007] [warn] [client 192.168.1.99] Module not found: 'mod_rewrite'"
-models = load_models_for_prediction()
+
+
 
 
 
