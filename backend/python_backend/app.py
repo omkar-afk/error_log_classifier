@@ -323,11 +323,7 @@ from flask_cors import CORS
 import threading
 
 app = Flask(__name__)
-
-# Enable CORS for the entire app
 CORS(app)
-
-
 
 @app.route('/log', methods=['POST'])
 def log_error():
@@ -335,18 +331,16 @@ def log_error():
     if not error_log:
         return jsonify({'error': 'No error log provided'}), 400
 
-    # Process the error log here
-    # You can call your existing error handling function or manage the log as needed
-    output = predict_error_message(models, error_log) # Assuming process_error_log is a function defined elsewhere
+    output = predict_error_message(models, error_log)
     return jsonify({'message': 'Error log processed', 'result': output})
 
-# Start the Flask app in a thread
-def run_flask():
-    app.run(host='0.0.0.0', port=10000)
-
-flask_thread = threading.Thread(target=run_flask)
-flask_thread.start()
-
-# Set up ngrok to expose the Flask app
-
-print(f"Flask app is running at: 3002")
+# Remove the threading and ngrok setup
+if __name__ == '__main__':
+    # Get the port from environment variable (Render will provide this)
+    port = int(os.environ.get('PORT', 3000))
+    
+    # Load your models here
+    models = load_models_for_prediction()
+    
+    # Run the app
+    app.run(host='0.0.0.0', port=port)
