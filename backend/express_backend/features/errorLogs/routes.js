@@ -5,7 +5,19 @@ const fs = require('fs').promises;
 const axios = require('axios');
 const express = require('express');
 const path = require('path');
+const { error } = require('console');
 
+
+let total = 0;
+let count = 0;
+let index = 0;
+setInterval(() => {
+  total = 0;
+  count = 0;
+  index = 0;
+}, 60000);
+let list1 = ["Critical","Noncritical","Warning"]
+const models = ["llama-3.3-70b-versatile","llama-3.1-8b-instant","llama-guard-3-8b","llama3-70b-8192","llama3-8b-8192","mixtral-8x7b-32768"]
 let i = 0;
 // Use db.errorLogModel.logModel instead of db.errorLogModel
 const ErrorLogModel = db.errorLogModel.logModel;
@@ -105,6 +117,17 @@ function processLogType(apiResponse) {
   }
 }
 
+function toCamelCase(str) {
+  return str
+      .toLowerCase() // Convert the entire string to lowercase
+      .split(/[^a-zA-Z0-9]+/) // Split by non-alphanumeric characters
+      .map((word, index) => 
+          index === 0 
+              ? word // Keep the first word lowercase
+              : word.charAt(0).toUpperCase() + word.slice(1) // Capitalize the first letter of subsequent words
+      )
+      .join(''); // Join the words together
+}
 // Route handler
 router.post('/add', async (req, res) => {
   const results = {
@@ -134,30 +157,21 @@ router.post('/add', async (req, res) => {
         error: `Failed to read log file: ${error.message}` 
       });
     }
-
+    let count1 = 0;
     // Process each line
     const lines = data.split('\n').filter(line => line.trim());
-    
     await Promise.all(lines.map(async (line, index) => {
       try {
-        // Validate log format
+
+        total += 1
         const validation = validateLogFormat(line);
         if (!validation.isValid) {
           throw new Error(`Invalid log format at line ${index + 1}: ${validation.error}`);
         }
 
-        // Make API request with timeout
-        const response = await axios.post(
-          `${process.env.flask_url}log`,
-          { error_log: line },
-          {
-            headers: { 'ngrok-skip-browser-warning': 'true' },
-            timeout: 5000 // 5 second timeout
-          }
-        );
 
         // Process log type
-        const logType = processLogType(response.data);
+        const logType = list1[count1%3];
 
         // Save to database
         const logEntry = new ErrorLogModel({
